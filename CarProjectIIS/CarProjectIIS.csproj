@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarProjectIIS.ApplicationServices\CarProjectIIS.ApplicationServices.csproj" />
+    <ProjectReference Include="..\CarProjectIIS.Core\CarProjectIIS.Core.csproj" />
+    <ProjectReference Include="..\CarProjectIIS.Data\CarProjectIIS.Data.csproj" />
+  </ItemGroup>
+
+</Project>
