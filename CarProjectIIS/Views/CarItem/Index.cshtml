@@ -38,8 +38,26 @@
                     <td>@caritem.ShortDesc</td>
                     <td>@caritem.LongDesc</td>
                     <td>@caritem.Price</td>
-                    <td>@caritem.isFavorite</td>
-                    <td>@caritem.available</td>
+                    <td>
+                        @if (caritem.isFavorite.HasValue)
+                        {
+                            @((caritem.isFavorite.Value) ? "Yes" : "No")
+                        }
+                        else
+                        {
+                            <text>N/A</text>
+                        }
+                    </td>
+                    <td>
+                        @if (caritem.available.HasValue)
+                        {
+                            @((caritem.available.Value) ? "Yes" : "No")
+                        }
+                        else
+                        {
+                            <text>N/A</text>
+                        }
+                    </td>
 
 
 
